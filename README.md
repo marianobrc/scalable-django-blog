@@ -1,2 +1,2 @@
 # scalable-django-website
-A portal about Django, AWS, Docker,a nd scalable architectures
+A portal about Django, AWS, Docker, and scalable architectures
