@@ -1384,13 +1384,13 @@ textarea.form-control, textarea.form-control:focus {
 /* --- End of Skills --- */
 
 /* --- Knowledges --- */
-.knowledges {
+.tags {
   list-style: none;
 }
 
-.knowledges li {;
+.tags li {;
   display: inline-block;
-  background-color: #61ADA1;
+  background-color: #26776B;
   border-radius: 3px;
   color: #fff;
   padding: 1px 10px;
