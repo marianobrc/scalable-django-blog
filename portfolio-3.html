@@ -1,9 +1,55 @@
+<style>
+    /* Image modal */
+    .modal {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.733);
+        margin-top: -1px;
+        animation: zoom 0.3s ease-in-out;
+        z-index: 100;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    .modal img {
+        max-height: 90%;
+        max-width: 90%;
+        /*width: 80%;*/
+        object-fit: cover;
+    }
+    /* Close button */
+    .closeBtn {
+        color: rgba(255, 255, 255, 0.87);
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    .closeBtn:hover {
+        color: rgb(255, 255, 255);
+    }
+</style>
 <div id="ajax-page" class="ajax-page-content">
     <div class="ajax-page-wrapper">
         <div class="ajax-page-nav">
             <div class="nav-item ajax-page-prev-next">
-                <a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-left"></i></a>
-                <a class="ajax-page-load" href="portfolio-1.html"><i class="lnr lnr-chevron-right"></i></a>
+                <a class="ajax-page-load" href="portfolio-3.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-right"></i></a>
             </div>
             <div class="nav-item ajax-page-close-button">
                 <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
@@ -11,25 +57,45 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1>Portfolio Project 3</h1>
+            <h1>Disco Drafter: A reponses generator for legal complaints</h1>
         </div>
 
         <div class="row">
             <div class="col-sm-8 col-md-8 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
                     <div class="item">
-                        <img src="img/portfolio/full/1.jpg" alt="" />
+                        <img src="img/portfolio/full/legal-asist/0.mvp_overview_0.png" alt="" style="max-height:500px;" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/2.jpg" alt="" />
+                        <img src="img/portfolio/full/legal-asist/1.mvp_overview.png" alt="" style="max-height:500px;" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/3.jpg" alt="" />
+                        <img src="img/portfolio/full/legal-asist/2.mvp_overview.png" alt="" style="max-height:500px;" />
                     </div>
-                </div>
-
-                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97102654?autoplay=0"></iframe>
+                    <div class="item">
+                        <img src="img/portfolio/full/legal-asist/3.mvp_overview.png" alt="" style="max-height:500px;" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/legal-asist/4.mvp_overview.png" alt="" style="max-height:500px;" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/legal-asist/5.blocks_ordering_issue.png" alt="" style="max-height:500px;" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/legal-asist/6.api_postman_requests.png" alt="" style="max-height:500px;" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/legal-asist/7.code_models.png" alt="" style="max-height:500px;" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/legal-asist/8.code_doc_parsing.png" alt="" style="max-height:500px;" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/legal-asist/9.code_tests.png" alt="" style="max-height:500px;" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/legal-asist/10.data_extraction_views.png" alt="" style="max-height:500px;" />
+                    </div>
                 </div>
 
                 <script type="text/javascript">
@@ -50,6 +116,7 @@
                 </script>
             </div>
 
+            
             <div class="col-sm-4 col-md-4 portfolio-block">
                 <!-- Project Description -->
                 <div class="project-description">
@@ -58,11 +125,9 @@
                     </div>
                     <ul class="project-general-info">
                         <li><p><i class="fa fa-user"></i> Mariano Martinez Grasso</p></li>
-                        <li><p><i class="fa fa-globe"></i> <a href="#" target="_blank">www.project-site.com</a></p></li>
-                        <li><p><i class="fa fa-calendar"></i> 25 december, 2016</p></li>
                     </ul>
 
-                    <p class="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="text-justify">A custom Inventory Management system for a Thift Store Chain</p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
@@ -71,11 +136,11 @@
                             <h3>Technology</h3>
                         </div>
                         <ul class="tags">
-                            <li><a>HTML5</a></li>
-                            <li><a>CSS3</a></li>
-                            <li><a>jQuery</a></li>
-                            <li><a>Ajax</a></li>
-                            <li><a>PHP5</a></li>
+                            <li><a>Python</a></li>
+                            <li><a>Django</a></li>
+                            <li><a>Celery</a></li>
+                            <li><a>Docker</a></li>
+                            <li><a>Heroku</a></li>
                         </ul>
                     </div>
                     <!-- /Technology -->
@@ -93,6 +158,41 @@
                 </div>
                 <!-- Project Description -->
             </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div>Some project description</div>
+                </div>
         </div>
     </div>
 </div>
+
+
+<script>
+    const images = document.querySelectorAll(".item img");
+    // get images src onclick
+    images.forEach((img) => {
+        img.addEventListener("click", (e) => {
+            //run modal function
+            imgModal(e.target.src);
+        });
+    });
+    //creating the modal
+    let imgModal = (src) => {
+        const modal = document.createElement("div");
+        modal.setAttribute("class", "modal");
+        //add the modal to the main section or the root element of the page
+        document.querySelector(".ajax-page-content").append(modal);
+        //adding image to modal
+        const newImage = document.createElement("img");
+        newImage.setAttribute("src", src);
+        //creating the close button
+        const closeBtn = document.createElement("i");
+        closeBtn.setAttribute("class", "fas fa-times closeBtn");
+        //close function
+        closeBtn.onclick = () => {
+            modal.remove();
+        };
+        modal.append(newImage, closeBtn);
+    };
+</script>
