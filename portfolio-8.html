@@ -1,49 +1,4 @@
-<style>
-    /* Image modal */
-    .modal {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.733);
-        margin-top: -1px;
-        animation: zoom 0.3s ease-in-out;
-        z-index: 100;
-    }
-
-    @keyframes zoom {
-        from {
-            transform: scale(0);
-        }
-        to {
-            transform: scale(1);
-        }
-    }
-    .modal img {
-        max-height: 90%;
-        max-width: 90%;
-        /*width: 80%;*/
-        object-fit: cover;
-    }
-    /* Close button */
-    .closeBtn {
-        color: rgba(255, 255, 255, 0.87);
-        font-size: 25px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 20px;
-        cursor: pointer;
-        transition: 0.2s ease-in-out;
-    }
-
-    .closeBtn:hover {
-        color: rgb(255, 255, 255);
-    }
-</style>
+<link rel="stylesheet" href="css/mymodal.css" type="text/css">
 <div id="ajax-page" class="ajax-page-content">
     <div class="ajax-page-wrapper">
         <div class="ajax-page-nav">
@@ -63,19 +18,19 @@
         <div class="row">
             <div class="col-sm-8 col-md-8 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
-                    <div class="item">
+                    <div class="item link">
                         <img src="img/portfolio/full/mixology/0.mvp_overview_jury.jpg" alt="" style="max-height:500px;" />
                     </div>
-                    <div class="item">
+                    <div class="item link">
                         <img src="img/portfolio/full/mixology/1.mvp_overview_vote.jpg" alt="" style="max-height:500px;" />
                     </div>
-                    <div class="item">
+                    <div class="item link">
                         <img src="img/portfolio/full/mixology/2.mvp_overview_ranking.jpg" alt="" style="max-height:500px;" />
                     </div>
-                    <div class="item">
+                    <div class="item link">
                         <img src="img/portfolio/full/mixology/3.code_mixology_models.png" alt="" style="max-height:500px;" />
                     </div>
-                    <div class="item">
+                    <div class="item link">
                         <img src="img/portfolio/full/mixology/4.code_mixology_forms.png" alt="" style="max-height:500px;" />
                     </div>
                 </div>
@@ -184,32 +139,4 @@
     </div>
 </div>
 
-
-<script>
-    const images = document.querySelectorAll(".item img");
-    // get images src onclick
-    images.forEach((img) => {
-        img.addEventListener("click", (e) => {
-            //run modal function
-            imgModal(e.target.src);
-        });
-    });
-    //creating the modal
-    function imgModal(src){
-        const modal = document.createElement("div");
-        modal.setAttribute("class", "modal");
-        //add the modal to the main section or the root element of the page
-        document.querySelector(".ajax-page-content").append(modal);
-        //adding image to modal
-        const newImage = document.createElement("img");
-        newImage.setAttribute("src", src);
-        //creating the close button
-        const closeBtn = document.createElement("i");
-        closeBtn.setAttribute("class", "fas fa-times closeBtn");
-        //close function
-        closeBtn.onclick = () => {
-            modal.remove();
-        };
-        modal.append(newImage, closeBtn);
-    };
-</script>
+<script src="js/mymodal.js"></script>
