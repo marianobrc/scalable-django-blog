@@ -43,6 +43,6 @@
     color: rgb(255, 255, 255);
 }
 
-.link {
+.owl-carousel .owl-item img {
     cursor: pointer;
 }
