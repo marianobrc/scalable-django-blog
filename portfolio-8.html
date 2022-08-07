@@ -57,7 +57,7 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1>Mixology: A Video Contest Platform</h1>
+            <h1>Mixology: A Video Contest Platform for a Marketing Campaign</h1>
         </div>
 
         <div class="row">
@@ -108,9 +108,8 @@
                     
                     <ul class="project-general-info info-list">
                         <li class="title">Requirements Analysis</li>
-                        <li class="title">API Design</li>
                         <li class="title">DB Design</li>
-                        <li class="title">Backend Development</li>
+                        <li class="title">Full-stack Development</li>
                         <li class="title">Unittesting and QA</li>
                         <li class="title">DevOps</li>
                         <li class="title">Maintenance & Bugfixing</li>
@@ -125,7 +124,6 @@
                         <ul class="tags">
                             <li>Python</li>
                             <li>Django</li>
-                            <li>Django REST Framework</li>
                             <li>PostgreSQL</li>
                             <li>Celery</li>
                             <li>HTML</li>
@@ -142,21 +140,43 @@
             <!-- Project Description -->
             <div class="row">
                 <div class="col-sm-12 col-md-12">
+                    <div><b>Project Brief</b></div>
+                    <div>
+                        <p>
+                            The project consisted in a platform to support a bartenders contest. 
+                            <br/>The participants get one random base drink to make a cocktail.
+                            <br/>They have to upload a proposal with a video and a description.
+                            <br/>Then a jury watch the videos and rate them. The best proposals move two the next stage.
+                            <br/>Then the videos of the finalists are voted by the public and there is a winner.
+                        </p>
+                    </div>
+                    <div style="margin-top: 10px;"><b >Key Features</b></div>
+                    <ul style="padding-left: 10px;">
+                        <li>Support for different user roles (The participants, the jury, admins, and the voters)</li>
+                        <li>Contest creation with customizable settings</li>
+                        <li>Uploading, storing and watching videos</li>
+                        <li>Voting in the different stages</li>
+                        <li>Finding the closest bar where the finalists make their drinks</li>
+                        <li>Leaders Board</li>
+                        <li>Exporting data to CSV</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
                     <div style="margin-top: 20px;"><b>My Role / Tasks</b></div>
                     <div>
                         <p>
-                            I leaded the development being in charge of the technical decissions and the project management, working on tasks such as. 
+                            I was involved in the development of the project from start to end, including tasks such as: 
                        </p>
                         <ul style="padding-left: 10px;">
-                            <li>Requirements Specifications using BDD, making Flow charts, Sequence Diagrams among others</li>
-                            <li>Task management for a small team of 4 Engineers (two backend engineers, one mobile engineer and one frontend engineer) using Agile.</li>
-                            <li>Mentoring junior engineers</li>
-                            <li>Architecture Design and Documentation</li>
-                            <li>Extending the existing REST API and adding new ones for the B2B services</li>
-                            <li>Unit tests & Integration tests</li>
-                            <li>Code Reviews</li>
+                            <li>Requirements Analysis & Effort Estimation</li>
+                            <li>Architecture Design using Amazon S3 + CLoudFront for video storage and distribution</li>
+                            <li>Backend & Frontend Development in Django</li>
+                            <li>Integration with third-party services for video conversion</li>
+                            <li>Integration tests</li>
                             <li>QA & Release Management</li>
-                            <li>Technical support for the customers while they were integrating the APIs</li>
+                            <li>Maintenance & Support while the contest is live</li>
                         </ul>
                     </div>
                 </div>
@@ -175,7 +195,7 @@
         });
     });
     //creating the modal
-    let imgModal = (src) => {
+    function imgModal(src){
         const modal = document.createElement("div");
         modal.setAttribute("class", "modal");
         //add the modal to the main section or the root element of the page
