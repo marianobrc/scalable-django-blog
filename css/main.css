@@ -2061,6 +2061,7 @@ textarea.form-control, textarea.form-control:focus {
 .portfolio-page-carousel {
   overflow: hidden;
   height: 540px;
+  background-color: #333;
 }
 
 .portfolio-page-carousel .owl-nav {
