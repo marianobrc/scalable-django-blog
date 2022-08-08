@@ -34,14 +34,15 @@
     float: left;
     -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none; }
+    -webkit-touch-callout: none; 
+  }
   .owl-carousel .owl-item img {
     display: block;
-    width: 100%;
     -webkit-transform-style: preserve-3d; }
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
-    display: none; }
+    display: none; 
+  }
   .owl-carousel .owl-nav .owl-prev,
   .owl-carousel .owl-nav .owl-next,
   .owl-carousel .owl-dot {
